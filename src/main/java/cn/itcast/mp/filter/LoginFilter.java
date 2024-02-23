@@ -1,4 +1,4 @@
-package cn.itcast.mp.controller.filter;
+package cn.itcast.mp.filter;
 
 import java.io.IOException;
 import java.util.Objects;

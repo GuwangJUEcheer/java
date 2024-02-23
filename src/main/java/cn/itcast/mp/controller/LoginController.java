@@ -1,4 +1,4 @@
-package cn.itcast.mp.controler;
+package cn.itcast.mp.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
