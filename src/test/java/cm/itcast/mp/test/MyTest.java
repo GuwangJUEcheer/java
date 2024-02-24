@@ -23,17 +23,17 @@ public class MyTest {
     public void testSomething() {
         // 测试逻辑
     	 // 创建一个 UserInfo 对象
-        UserInfo userInfo = new UserInfo();
-        userInfo.setId("3");
-        userInfo.setCreateTime(LocalDateTime.now(ZoneId.of("Asia/Tokyo")).toString());
-        userInfo.setUpdateTime(LocalDateTime.now(ZoneId.of("Asia/Tokyo")).toString());
-        userInfo.setUsername("JohnDoe");
-        userInfo.setAge(30);
-        userInfo.setTelephone("1234567890");
-        userInfo.setEmail("johndoe@example.com");
-        userInfo.setSex("Male");
-        userInfo.setAddress("123 Main Street");
-        userMapper.insertUser(userInfo);
+//        UserInfo userInfo = new UserInfo();
+//        userInfo.setId("3");
+//        userInfo.setCreateTime(LocalDateTime.now(ZoneId.of("Asia/Tokyo")).toString());
+//        userInfo.setUpdateTime(LocalDateTime.now(ZoneId.of("Asia/Tokyo")).toString());
+//        userInfo.setUsername("JohnDoe");
+//        userInfo.setAge(30);
+//        userInfo.setTelephone("1234567890");
+//        userInfo.setEmail("johndoe@example.com");
+//        userInfo.setSex("Male");
+//        userInfo.setAddress("123 Main Street");
+//        userMapper.insertUser(userInfo);
     }
 }
 
