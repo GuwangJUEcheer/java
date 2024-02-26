@@ -1,4 +1,5 @@
 cn\itcast\mp\controller\IndexController.class
+cn\itcast\mp\utils\TimerUtils.class
 cn\itcast\mp\model\AuthorizeDVO.class
 cn\itcast\mp\provider\AuthorizeProvider.class
 cn\itcast\mp\controller\AuthorizeController.class
@@ -7,5 +8,7 @@ cn\itcast\mp\mapper\UserMapper.class
 cn\itcast\mp\filter\LoginFilter.class
 cn\itcast\mp\config\InterCeptorConfig.class
 cn\itcast\mp\MyApplication.class
+cn\itcast\mp\utils\TimerUtils$1.class
 cn\itcast\mp\model\GithubUser.class
+cn\itcast\mp\utils\DateUtils.class
 cn\itcast\mp\model\UserInfo.class

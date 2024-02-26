@@ -1,6 +1,7 @@
 package cm.itcast.mp.test;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.UUID;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,19 +22,31 @@ public class MyTest {
 	
     @Test
     public void testSomething() {
-        // 测试逻辑
-    	 // 创建一个 UserInfo 对象
-//        UserInfo userInfo = new UserInfo();
-//        userInfo.setId("3");
-//        userInfo.setCreateTime(LocalDateTime.now(ZoneId.of("Asia/Tokyo")).toString());
-//        userInfo.setUpdateTime(LocalDateTime.now(ZoneId.of("Asia/Tokyo")).toString());
-//        userInfo.setUsername("JohnDoe");
-//        userInfo.setAge(30);
-//        userInfo.setTelephone("1234567890");
-//        userInfo.setEmail("johndoe@example.com");
-//        userInfo.setSex("Male");
-//        userInfo.setAddress("123 Main Street");
-//        userMapper.insertUser(userInfo);
+         //测试逻辑
+    	 //创建一个 UserInfo 对象
+        UserInfo userInfo = new UserInfo();
+        userInfo.setId(UUID.randomUUID().toString());
+        userInfo.setCreateTime(LocalDateTime.now(ZoneId.of("Asia/Tokyo")).toString());
+        userInfo.setUpdateTime(LocalDateTime.now(ZoneId.of("Asia/Tokyo")).toString());
+        userInfo.setUsername("JohnDoe");
+        userInfo.setAge(30);
+        userInfo.setTelephone("1234567890");
+        userInfo.setEmail("adada@example.com");
+        userInfo.setSex("Male");
+        userInfo.setAddress("123 Main Street");
+        userMapper.insertUser(userInfo);
     }
+    
+//    public static void main(String[] args) {
+//		
+//    	try {
+//			TimerUtils.newSchedule(()->{
+//				System.out.println("run time" + new Date().toLocaleString());
+//			}, "2024-02-06 14:54:00", (long) 2000);
+//		} catch (ParseException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 }
 
