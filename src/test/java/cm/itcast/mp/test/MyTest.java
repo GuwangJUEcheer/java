@@ -1,40 +1,38 @@
 package cm.itcast.mp.test;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.UUID;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import cn.itcast.mp.MyApplication;
-import cn.itcast.mp.mapper.UserMapper;
-import cn.itcast.mp.model.UserInfo;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {MyApplication.class})
 public class MyTest {
 
 	@Autowired
-	private UserMapper userMapper;
+	private RedisTemplate<String, String> stringRedisTemplate;
 	
     @Test
     public void testSomething() {
-         //测试逻辑
-    	 //创建一个 UserInfo 对象
-        UserInfo userInfo = new UserInfo();
-        userInfo.setId(UUID.randomUUID().toString());
-        userInfo.setCreateTime(LocalDateTime.now(ZoneId.of("Asia/Tokyo")).toString());
-        userInfo.setUpdateTime(LocalDateTime.now(ZoneId.of("Asia/Tokyo")).toString());
-        userInfo.setUsername("JohnDoe");
-        userInfo.setAge(30);
-        userInfo.setTelephone("1234567890");
-        userInfo.setEmail("adada@example.com");
-        userInfo.setSex("Male");
-        userInfo.setAddress("123 Main Street");
-        userMapper.insertUser(userInfo);
+    	
+        // 获取操作字符串的ValueOperations对象
+        ValueOperations<String, String> valueOps = stringRedisTemplate.opsForValue();
+        
+        // 定义一个键和值
+        String key = "testKey";
+        String value = "Hello, Redis I love you!";
+        
+        // 将键值对存入Redis
+        valueOps.set(key, value);
+        
+        // 从Redis中读取值
+        String valueFromRedis = valueOps.get(key);
+        
+        System.out.println(valueFromRedis);
     }
     
 //    public static void main(String[] args) {

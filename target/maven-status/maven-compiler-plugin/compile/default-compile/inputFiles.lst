@@ -1,5 +1,7 @@
+C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\config\QuartzConfig.java
 C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\config\InterCeptorConfig.java
 C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\model\GithubUser.java
+C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\utils\JobUtils.java
 C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\utils\TimerUtils.java
 C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\utils\DateUtils.java
 C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\controller\AuthorizeController.java
@@ -10,4 +12,6 @@ C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\model\User
 C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\filter\LoginFilter.java
 C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\MyApplication.java
 C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\provider\AuthorizeProvider.java
+C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\config\CacheConfig.java
+C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\config\RedisConfig.java
 C:\MyProject\20240221\itcast-mp-springboot\src\main\java\cn\itcast\mp\controller\IndexController.java
