@@ -16,7 +16,7 @@ public interface UserMapper {
 	List<UserInfo> getAllUsers();
 
 	@Select("SELECT * FROM user_info WHERE id = #{id}")
-	UserInfo getUserById(Long id);
+	UserInfo getUserById(String id);
 
 	void insertUser(UserInfo user);
 

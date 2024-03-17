@@ -6,7 +6,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import cn.itcast.mp.interceptor.AuthorizeInterceptor;
 
-@Configuration
+//@Configuration
 public class InterCeptorConfig implements WebMvcConfigurer{
 
 	@Override
