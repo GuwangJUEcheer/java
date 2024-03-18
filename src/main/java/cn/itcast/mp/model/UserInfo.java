@@ -22,6 +22,7 @@ public class UserInfo implements Serializable {
 	private String email;
 	private String sex;
 	private String address;
+	private String password;
 
 	public UserInfo() {
 		this.id = UUID.randomUUID().toString();

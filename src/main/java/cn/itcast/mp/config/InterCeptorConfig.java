@@ -4,14 +4,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import cn.itcast.mp.interceptor.AuthorizeInterceptor;
+import cn.itcast.mp.interceptor.TokenInterceptor;
 
 @Configuration
 public class InterCeptorConfig implements WebMvcConfigurer{
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		AuthorizeInterceptor interceptor = new AuthorizeInterceptor();
+		TokenInterceptor interceptor = new TokenInterceptor();
 		registry.addInterceptor(interceptor);
 	}	
 }

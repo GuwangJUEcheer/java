@@ -12,4 +12,6 @@ public interface UserService {
 	
 	public void addUser(UserInfo user);
 	
+	public UserInfo findUserByName(String UserName);
+	
 }

@@ -39,4 +39,11 @@ public class UserServiceImpl implements UserService{
 		
 		userMapper.insertUser(user);
 	}
+
+	@Override
+	@Cacheable(cacheNames="User",key="#name")
+	public UserInfo findUserByName(String name) {
+		// TODO Auto-generated method stub
+		return userMapper.findUserByName(name);
+	}
 }

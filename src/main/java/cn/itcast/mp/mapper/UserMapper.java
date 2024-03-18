@@ -25,4 +25,7 @@ public interface UserMapper {
 
 	@Delete("DELETE FROM user_info WHERE id=#{id}")
 	void deleteUser(Long id);
+	
+	@Select("SELECT * FROM user_info WHERE username=#{username}")
+	UserInfo findUserByName(String username);
 }
