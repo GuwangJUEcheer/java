@@ -18,7 +18,7 @@ import io.micrometer.core.instrument.util.StringUtils;
 public class TokenService{
 
 	@Value("${jwt.private.key}")
-	private static String secretKey;
+	private String secretKey;
 
 	@Value("${jwt.expired-time}")
 	private long expiration;

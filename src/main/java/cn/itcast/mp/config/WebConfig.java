@@ -10,13 +10,15 @@ import org.springframework.context.annotation.Configuration;
 public class WebConfig {
 
 	  @Bean
-	    public CorsFilter corsFilter() {
+	    public CorsFilter corsFilter() {	        
 	        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 	        CorsConfiguration config = new CorsConfiguration();
-	        config.addAllowedOrigin("*"); // 允许所有来源
+	        config.setAllowCredentials(true); // 允许凭证
+	        config.addAllowedOrigin("http://localhost:3000"); // 只允许 http://localhost:3000 这个源
+	        config.addAllowedHeader("*"); // 允许所有头
 	        config.addAllowedMethod("*"); // 允许所有方法（GET、POST等）
-	        config.addAllowedHeader("*"); // 允许所有请求头
-	        source.registerCorsConfiguration("/**", config);
+	        
+	        source.registerCorsConfiguration("/**", config); // 应用于所有路径
 	        return new CorsFilter(source);
 	    }
 }

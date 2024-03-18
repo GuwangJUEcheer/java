@@ -1,6 +1,7 @@
 package cn.itcast.mp.utils;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
@@ -72,4 +73,11 @@ public class DateUtils {
     public static int compareDates(LocalDate date1, LocalDate date2) {
         return date1.compareTo(date2);
     }
+    
+	
+	public static String nowTime() {
+		 DateTimeFormatter dtf = DateTimeFormatter.ofPattern( "yyyy/MM/dd HH:mm:ss" );  
+		 LocalDateTime time = LocalDateTime.now();  
+		 return dtf.format(time);
+	}
 }

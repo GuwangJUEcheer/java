@@ -1,5 +1,6 @@
 package cn.itcast.mp.model;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 import lombok.Data;
@@ -9,7 +10,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @Data
-public class UserInfo {
+public class UserInfo implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private String id;
 	private String createTime;
 	private String updateTime;
